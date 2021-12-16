@@ -314,8 +314,6 @@
 (nvmap :keymaps 'override :prefix "SPC"
        "s b"   '(split-ibuffer-right :which-key "spown a ibuffer in a right spli"))
 #+end_src
-<<<<<<< HEAD
-=======
 ** Dired right split screen
 #+begin_src emacs-lisp
 (defun split-dired-right()
@@ -327,7 +325,6 @@
 (nvmap :keymaps 'override :prefix "SPC"
        "s d"   '(split-dired-right :which-key "spown a ibuffer in a right spli"))
 #+end_src
->>>>>>> b6d72ac (adding custom script for emacs)
 * EMACS SETTINGS
 ** Disable file Backup
 #+begin_src emacs-lisp
