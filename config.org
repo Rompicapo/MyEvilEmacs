@@ -130,6 +130,12 @@
 
 #+end_src
 
+* SYNTAX HIGHLIGHTING
+** Haskell
+#+begin_src emacs-lisp
+(use-package haskell-mode
+    :ensure t)
+#+end_src
 * KEYBINDING
 ** General keybinding 
 #+begin_src emacs-lisp
