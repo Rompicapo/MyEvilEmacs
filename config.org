@@ -325,6 +325,18 @@
 (nvmap :keymaps 'override :prefix "SPC"
        "s d"   '(split-dired-right :which-key "spown a ibuffer in a right spli"))
 #+end_src
+** Open agenda file
+#+begin_src emacs-lisp
+(defun open-agenda-file()
+(interactive)
+(split-window-right)
+(other-window -1)
+(find-file "~/Org/agenda.org"))
+
+(nvmap :keymaps 'override :prefix "SPC"
+       "a f"   '(open-agenda-file :which-key "spown a ibuffer in a right spli"))
+
+#+end_src
 * EMACS SETTINGS
 ** Disable file Backup
 #+begin_src emacs-lisp
