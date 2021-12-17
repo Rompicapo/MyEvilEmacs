@@ -350,14 +350,14 @@
 #+end_src
 ** eww in right split screen
 #+begin_src emacs-lisp
-(defun split-dired-right()
+(defun split-eww-right()
 (interactive)
 (split-window-right)
 (other-window -1)
 (eww "https://www.google.com"))
 
 (nvmap :keymaps 'override :prefix "SPC"
-       "s b"   '(split-dired-right :which-key "spown a eww in a right spli"))
+       "s b"   '(split-eww-right :which-key "spown a eww in a right spli"))
 
 #+end_src
 * EMACS SETTINGS
