@@ -136,6 +136,11 @@
 (use-package haskell-mode
     :ensure t)
 #+end_src
+** markdown
+#+begin_src emacs-lisp
+(use-package markdown-mode
+    :ensure t)
+#+end_src
 * KEYBINDING
 ** General keybinding 
 #+begin_src emacs-lisp
@@ -331,7 +336,7 @@
 (nvmap :keymaps 'override :prefix "SPC"
        "s d"   '(split-dired-right :which-key "spown a ibuffer in a right spli"))
 #+end_src
-** Open agenda file
+** Open agenda file in right split screen
 #+begin_src emacs-lisp
 (defun open-agenda-file()
 (interactive)
@@ -340,7 +345,19 @@
 (find-file "~/Org/agenda.org"))
 
 (nvmap :keymaps 'override :prefix "SPC"
-       "a f"   '(open-agenda-file :which-key "spown a ibuffer in a right spli"))
+       "a f"   '(open-agenda-file :which-key "Spown a org agebda file in a right spli"))
+
+#+end_src
+** eww in right split screen
+#+begin_src emacs-lisp
+(defun split-dired-right()
+(interactive)
+(split-window-right)
+(other-window -1)
+(eww "https://www.google.com"))
+
+(nvmap :keymaps 'override :prefix "SPC"
+       "s b"   '(split-dired-right :which-key "spown a eww in a right spli"))
 
 #+end_src
 * EMACS SETTINGS
