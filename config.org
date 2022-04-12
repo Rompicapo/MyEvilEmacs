@@ -95,11 +95,6 @@
 				("mp4" . "mpv")))
 #+end_src
 
-** vterm
-#+begin_src emacs-lisp
-(use-package vterm
-    :ensure t)
-#+end_src
 ** ivy
 #+begin_src emacs-lisp
 (use-package ivy
